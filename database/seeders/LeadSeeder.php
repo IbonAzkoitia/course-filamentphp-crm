@@ -26,7 +26,7 @@ class LeadSeeder extends Seeder
 
         $statuses = [
             'Nurturing',
-            'Analizy',
+            'Analyze',
             'Working',
             'Discovery Call',
             'Referred',
