@@ -26,6 +26,11 @@ class LeadResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-user';
 
+    public static function getNavigationBadge(): ?string
+    {
+        return Lead::count();
+    }
+
     public static function form(Form $form): Form
     {
         return $form
