@@ -141,10 +141,10 @@ class LeadResource extends Resource
                 Tables\Columns\TextColumn::make('phone')
                     ->searchable()
                     ->toggleable(isToggledHiddenByDefault: true),
-                
-
+                Tables\Columns\TextColumn::make('description')
+                    ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('source.name')
-                ->toggleable(isToggledHiddenByDefault: true),
+                    ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('url_linkedin')
                     ->searchable()
                     ->toggleable(isToggledHiddenByDefault: true),

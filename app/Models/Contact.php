@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Contact extends Model
@@ -31,4 +32,9 @@ class Contact extends Model
         'country',
         'account_id',
     ];
+
+    public function source(): BelongsTo
+    {
+        return $this->belongsTo(Source::class);
+    }
 }
